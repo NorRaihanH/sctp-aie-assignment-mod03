@@ -227,19 +227,14 @@ curl http://localhost:8080/api/tasks/1
 ```
 
 Example response:
+![cURL API Test](docs/04%20getOneTask202.png)
 
-```json
-{
-  "id": 1,
-  "title": "Complete Module 3",
-  "description": "Finish assignment",
-  "priority": "HIGH",
-  "dueDate": "2026-05-20",
-  "completed": false
-}
-```
+---
 
 If the requested task cannot be found, the service throws a runtime exception indicating that the task does not exist.
+
+Example response:
+![cURL API Test](docs/04%20getOneTaskNotFound.png)
 
 ---
 
