@@ -227,14 +227,14 @@ curl http://localhost:8080/api/tasks/1
 ```
 
 Example response:
-![cURL API Test](docs/04%20getOneTask202.png)
+![cURL API Test](docs/04%20postman%20getOneTask202.png)
 
 ---
 
 If the requested task cannot be found, the service throws a runtime exception indicating that the task does not exist.
 
 Example response:
-![cURL API Test](docs/04%20getOneTaskNotFound.png)
+![cURL API Test](docs/05%20postman%20getOneTaskNotfound.png)
 
 ---
 
@@ -286,6 +286,9 @@ taskflow-api/
 ├── docs/
 │   ├── 01 curl.png
 │   └── 02 postman.png
+│   └── 03 postman allTasks.png
+│   └── 04 postman getOneTask202.png
+│   └── 05 postman getOneTaskNotfound.png
 │
 ├── pom.xml
 └── README.md
