@@ -29,7 +29,12 @@ public class TaskController {
     public ResponseEntity<Task> getTaskById(@PathVariable Long id) {
         // YOUR CODE HERE
         //return null;
-        Task task = taskService.findTaskById(id);
+        Task task = null;
+        try{
+            task = taskService.findTaskById(id);
+        } catch (Exception e) {
+            return ResponseEntity.notFound().build();
+        }
         return ResponseEntity.ok(task);
     }
     
